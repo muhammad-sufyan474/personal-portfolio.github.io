@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+
+
+        .wrapper-body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+        }
+        .wrapper{
+            width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .wrapper .card{
+            width: calc(33% - 20px);
+            background: #fff;
+            height: 300px;
+            border-radius: 5px;
+        }
+        .wrapper .card .circle{
+            height: 150px;
+            width: 150px;
+            border: 8px solid #fa4299;
+            border-radius: 50%;
+        }
+        .card .circle .box,
+        .card .circle .box span{
+            position: relative;
+            top: 50%;
+            left: 50%;
+        }
+        .card .circle .box{
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+        .card .circle .box span{
+            font-size: 38px;
+            font-weight: 600;
+            transform: translate(-50%, -50%);
+            background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+    </style>
+
+    <div class="wrapper-body">
+        <div class="wrapper">
+            <div class="card">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span>80%</span></div>
+                </div>
+                <div class="text">HTML & CSS</div>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span>70%</span></div>
+                </div>
+                <div class="text">Javascriot</div>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <div class="box"><span>60%</span></div>
+                </div>
+                <div class="text">Bootstrap</div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
